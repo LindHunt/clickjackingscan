@@ -1,36 +1,43 @@
-# LINDHUNT Clickjacking Scanner
+LINDHUNT Clickjacking Scanner
 
-Asynchronous Clickjacking vulnerability scanner written in Python.
+Lightweight asynchronous clickjacking scanner built for modern security testing.
 
- Features
+Features
 
-- Async high-speed scanning
-- Single target mode (-u)
-- Multi target mode (-list)
-- Output file support (-o)
-- Smart header analysis (X-Frame-Options & CSP frame-ancestors)
-- Clean colored CLI output
+Asynchronous high-speed scanning
 
- Installation
-git clone https://github.com/yourusername/lindhunt-clickjacking.git
-cd lindhunt-clickjacking
+Single target mode (-u)
+
+Multi target mode (-list)
+
+Output file support (-o)
+
+Intelligent header analysis
+
+X-Frame-Options
+
+Content-Security-Policy (frame-ancestors)
+
+Clean colored CLI output
+
+Summary statistics
+
+Installation
+git clone https://github.com/LindHunt/clickjackingscan.git
+cd clickjackingscan
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
-
 Usage
-
-Single target:
-
-python lindhunt.py -u https://example.com
-
-Multi target:
-
-python lindhunt.py -list targets.txt
-
-Save output:
-
-python lindhunt.py -u https://example.com -o result.txt
+Single target
+python clickscan.py -u https://example.com
+Multiple targets
+python clickscan.py -list targets.txt
+Save output
+python clickscan.py -u https://example.com -o result.txt
+Example
+[PROTECTED] https://example.com | XFO: SAMEORIGIN
+[VULNERABLE] https://test.com | No anti-clickjacking headers
 Disclaimer
 
 This tool is intended for educational purposes and authorized security testing only.
