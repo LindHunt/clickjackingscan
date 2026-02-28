@@ -17,3 +17,20 @@ cd lindhunt-clickjacking
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
+
+Usage
+
+Single target:
+
+python lindhunt.py -u https://example.com
+
+Multi target:
+
+python lindhunt.py -list targets.txt
+
+Save output:
+
+python lindhunt.py -u https://example.com -o result.txt
+Disclaimer
+
+This tool is intended for educational purposes and authorized security testing only.
