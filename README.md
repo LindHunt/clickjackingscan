@@ -1,69 +1,138 @@
-🚀 LINDHUNT Clickjacking Scanner
+# 🚀 **LindHunt Clickjacking Scanner**
 
-Lightweight asynchronous clickjacking scanner built for modern security testing.
+<p align="center">
+  <img src="https://img.shields.io/badge/version-1.0.0-blue.svg" alt="Version">
+  <img src="https://img.shields.io/badge/python-3.8+-brightgreen.svg" alt="Python">
+  <img src="https://img.shields.io/badge/license-MIT-orange.svg" alt="License">
+  <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome">
+</p>
 
-Fast. Clean. Focused.
+<p align="center">
+  <b>⚡ Lightweight asynchronous clickjacking scanner for modern security testing</b><br>
+  <i>Fast • Clean • Focused</i>
+</p>
 
-✨ Features
+---
 
-⚡ Asynchronous high-speed scanning
+## ✨ **Features**
 
-🎯 Single target mode (-u)
+| Feature | Description |
+|---------|-------------|
+| ⚡ Asynchronous | High-speed scanning with async/await |
+| 🎯 Single Target | Quick scan one URL with `-u` |
+| 📂 Multi Target | Bulk scan from file with `-list` |
+| 💾 Output Support | Save results with `-o` |
+| 🧠 Smart Analysis | Checks X-Frame-Options & CSP frame-ancestors |
+| 🎨 Clean Output | Colored CLI with status icons |
+| 📊 Statistics | Summary of protected/vulnerable sites |
 
-📂 Multi target mode (-list)
+---
 
-💾 Output file support (-o)
+## 🛠 **Installation**
 
-🧠 Intelligent header analysis
-
-X-Frame-Options
-
-Content-Security-Policy (frame-ancestors)
-
-🎨 Clean colored CLI output
-
-📊 Summary statistics
-
-🛠 Installation
+```bash
+# Clone repository
 git clone https://github.com/LindHunt/clickjackingscan.git
 cd clickjackingscan
 
+# Setup virtual environment
 python3 -m venv venv
-source venv/bin/activate
+source venv/bin/activate  # Linux/Mac
+# venv\Scripts\activate   # Windows
 
+# Install dependencies
 pip install -r requirements.txt
-🚦 Usage
-🔎 Scan Single Target
-python clickscan.py -u https://example.com
-📂 Scan Multiple Targets
-python clickscan.py -list targets.txt
-💾 Save Output to File
-python clickscan.py -u https://example.com -o result.txt
-🖥 Example Output
-[PROTECTED] https://example.com | XFO: SAMEORIGIN
-[VULNERABLE] https://test.com | No anti-clickjacking headers
+```
 
-------------------------------------------------------------
-Protected: 1
+---
+
+## 🚦 **Usage**
+
+### 🎯 Single Target
+```bash
+python clickscan.py -u https://example.com
+```
+
+### 📂 Multiple Targets
+```bash
+python clickscan.py -list targets.txt
+```
+
+### 💾 Save Output
+```bash
+python clickscan.py -u https://example.com -o result.txt
+```
+
+---
+
+## 📋 **Example Output**
+
+```
+[PROTECTED]   https://example.com     | XFO: SAMEORIGIN
+[VULNERABLE]  https://test.com        | No anti-clickjacking headers
+[PROTECTED]   https://secure-site.com | CSP: frame-ancestors 'self'
+
+----------------------------------------
+Protected: 2
 Vulnerable: 1
 Errors: 0
-⚠ Disclaimer
+```
 
-This tool is intended for educational purposes and authorized security testing only.
-Unauthorized use against systems without permission is strictly prohibited.
+---
 
+## 📊 **GitHub Stats**
 
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=LindHunt&show_icons=true&theme=tokyonight&hide_border=true" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=LindHunt&layout=compact&theme=tokyonight&hide_border=true" width="48%" />
+</p>
 
+---
 
-# 👋 Hello, I'm LindHunt
+## 🛡️ **Headers Checked**
+
+| Header | Value | Status |
+|--------|-------|--------|
+| `X-Frame-Options` | `DENY` | ✅ Secure |
+| `X-Frame-Options` | `SAMEORIGIN` | ✅ Secure |
+| `CSP frame-ancestors` | `'none'` | ✅ Secure |
+| `CSP frame-ancestors` | `'self'` | ✅ Secure |
+| No headers | - | ⚠️ Vulnerable |
+
+---
+
+## 📦 **Dependencies**
+
+<p align="center">
+  <img src="https://img.shields.io/badge/aiohttp-3.9.0-blue.svg" alt="aiohttp">
+  <img src="https://img.shields.io/badge/colorama-0.4.6-green.svg" alt="colorama">
+  <img src="https://img.shields.io/badge/asyncio-3.4.3-yellow.svg" alt="asyncio">
+</p>
+
+---
+
+## 👨‍💻 **About**
 
 🛰 OSINT Analyst & Security Researcher  
 ⚡ Building lightweight security utilities  
 
 ---
 
-## 📊 GitHub Stats
+## ⚠️ **Disclaimer**
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=LindHunt&show_icons=true&theme=tokyonight)
+> This tool is for educational purposes and authorized testing only.  
+> Unauthorized use against systems without permission is prohibited.
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=LindHunt&layout=compact&theme=tokyonight)
+---
+
+## 📄 **License**
+
+<p align="center">
+  <img src="https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge" alt="MIT License">
+</p>
+
+---
+
+<p align="center">
+  <b>⭐ Star if useful • Made by LindHunt</b>
+</p>
