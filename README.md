@@ -1,229 +1,187 @@
-# 🚀 **LINDHUNT CLICKJACKING SCANNER**
+# LINDHUNT CLICKJACKING SCANNER
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=500&color=00FF00&center=true&vCenter=true&width=600&lines=⚡+CLICKJACKING+SCANNER;🔍+ASYNCHRONOUS+SECURITY+TOOL;🛡️+WEB+VULNERABILITY+DETECTOR;🚀+FAST+%26+LIGHTWEIGHT" alt="Typing SVG" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=CLICKJACKING%20SCANNER&fontSize=40&fontAlignY=35&desc=Asynchronous%20Security%20Tool&descAlignY=55&descSize=18" width="100%" />
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/version-1.0.0-00FF00?style=for-the-badge&logo=python&logoColor=white&labelColor=black" alt="Version">
-  <img src="https://img.shields.io/badge/python-3.8+-00FF00?style=for-the-badge&logo=python&logoColor=white&labelColor=black" alt="Python">
-  <img src="https://img.shields.io/badge/license-MIT-00FF00?style=for-the-badge&logo=open-source-initiative&logoColor=white&labelColor=black" alt="License">
-  <img src="https://img.shields.io/badge/PRs-welcome-00FF00?style=for-the-badge&logo=github&logoColor=white&labelColor=black" alt="PRs">
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/OSINT-Analyst-FF00FF?style=for-the-badge&logo=grafana&logoColor=white&labelColor=black" alt="OSINT">
-  <img src="https://img.shields.io/badge/Security-Researcher-FF00FF?style=for-the-badge&logo=security&logoColor=white&labelColor=black" alt="Security">
-  <img src="https://img.shields.io/badge/Ethical-Hacker-FF00FF?style=for-the-badge&logo=hackthebox&logoColor=white&labelColor=black" alt="Hacker">
-</p>
-
-<br>
-
-<p align="center">
-  <img src="https://profile-counter.glitch.me/LindHunt/count.svg" alt="Visitor Count" />
+  <img src="https://img.shields.io/badge/Version-1.0.0-000000?style=flat-square&logo=github&logoColor=white&labelColor=2D2D2D" />
+  <img src="https://img.shields.io/badge/Python-3.8+-000000?style=flat-square&logo=python&logoColor=white&labelColor=2D2D2D" />
+  <img src="https://img.shields.io/badge/License-MIT-000000?style=flat-square&logo=open-source-initiative&logoColor=white&labelColor=2D2D2D" />
 </p>
 
 ---
 
-## ⚡ **FEATURES MATRIX**
+## PROJECT OVERVIEW
 
 ```
-┌─────────────────────────────────────────────────────────────────┐
-│  🔥 CORE FEATURES                     ⚡ PERFORMANCE            │
-├─────────────────────────────────────────────────────────────────┤
-│  🚀 Asynchronous Scanning            │  ⚡ 1000+ req/sec        │
-│  🎯 Single Target Mode (-u)          │  🔋 Low Memory Usage     │
-│  📂 Multi Target Mode (-list)         │  ⚙️ Configurable Threads │
-│  💾 Output Support (-o)               │  📊 Real-time Stats      │
-│  🧠 Smart Header Analysis             │  🎨 Colored Output       │
-│  🔍 X-Frame-Options Check             │  📈 Summary Reports      │
-│  🛡️ CSP frame-ancestors Check         │  ⏱️ Timeout Control      │
-└─────────────────────────────────────────────────────────────────┘
+╔══════════════════════════════════════════════════════════════╗
+║  Lightweight asynchronous clickjacking scanner              ║
+║  Built for modern security testing                           ║
+║  Fast. Clean. Focused.                                       ║
+╚══════════════════════════════════════════════════════════════╝
 ```
 
 ---
 
-## 🛠️ **INSTALLATION**
+## FEATURES
 
-<p align="center">
-  <img src="https://img.shields.io/badge/STEP_1-CLONE-00FF00?style=for-the-badge&labelColor=black" alt="Step1">
-  <img src="https://img.shields.io/badge/STEP_2-SETUP-00FF00?style=for-the-badge&labelColor=black" alt="Step2">
-  <img src="https://img.shields.io/badge/STEP_3-RUN-00FF00?style=for-the-badge&labelColor=black" alt="Step3">
-</p>
+```
+┌─────────────────────────────────────────────────────────────┐
+│  CORE FEATURES                    PERFORMANCE              │
+├─────────────────────────────────────────────────────────────┤
+│  Asynchronous Scanning            High-speed req/sec       │
+│  Single Target Mode (-u)          Low Memory Usage         │
+│  Multi Target Mode (-list)         Configurable Threads    │
+│  Output Support (-o)               Real-time Stats         │
+│  Smart Header Analysis             Colored Output          │
+│  X-Frame-Options Check             Summary Reports         │
+│  CSP frame-ancestors Check         Timeout Control         │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## INSTALLATION
 
 ```bash
-# 📥 STEP 1: Clone Repository
+# Step 1: Clone Repository
 git clone https://github.com/LindHunt/clickjackingscan.git
 cd clickjackingscan
 
-# 🔧 STEP 2: Setup Environment
+# Step 2: Setup Environment
 python3 -m venv venv
 source venv/bin/activate  # Linux/Mac
 # venv\Scripts\activate   # Windows
 
-# 📦 STEP 3: Install Dependencies
+# Step 3: Install Dependencies
 pip install -r requirements.txt
 ```
 
 ---
 
-## 🚀 **USAGE COMMANDS**
-
-<p align="center">
-  <img src="https://img.shields.io/badge/🎯_SINGLE_TARGET-000000?style=for-the-badge&logo=target&logoColor=white&labelColor=red" alt="Single">
-  <img src="https://img.shields.io/badge/📂_BULK_SCAN-000000?style=for-the-badge&logo=files&logoColor=white&labelColor=blue" alt="Bulk">
-  <img src="https://img.shields.io/badge/💾_SAVE_OUTPUT-000000?style=for-the-badge&logo=save&logoColor=white&labelColor=green" alt="Save">
-</p>
+## USAGE COMMANDS
 
 ```bash
-# 🎯 SCAN SINGLE TARGET
+# Scan Single Target
 python clickscan.py -u https://example.com
 
-# 📂 SCAN MULTIPLE TARGETS
+# Scan Multiple Targets
 python clickscan.py -list targets.txt
 
-# 💾 SAVE RESULTS TO FILE
+# Save Results to File
 python clickscan.py -u https://example.com -o result.txt
 
-# ⚙️ ADVANCED SCAN
+# Advanced Scan
 python clickscan.py -list urls.txt -o results.txt --timeout 10 --threads 100
 ```
 
 ---
 
-## 📊 **LIVE SCAN EXAMPLE**
+## SCAN OUTPUT EXAMPLE
 
 ```
 ┌──────────────────────────────────────────────────────────────┐
-│  🚀 LINDHUNT CLICKJACKING SCANNER v1.0                       │
-│  ⚡ SCANNING IN PROGRESS...                                    │
+│  LINDHUNT CLICKJACKING SCANNER v1.0                         │
+│  Scanning in progress...                                     │
 └──────────────────────────────────────────────────────────────┘
 
-🟢 [PROTECTED]   https://google.com     │ XFO: SAMEORIGIN
-🔴 [VULNERABLE]  https://test.com        │ No Headers Found
-🟢 [PROTECTED]   https://github.com      │ CSP: frame-ancestors 'self'
-🔴 [VULNERABLE]  https://oldsite.net     │ XFO: ALLOW-FROM (Deprecated)
-🟢 [PROTECTED]   https://microsoft.com   │ XFO: DENY
-🔴 [VULNERABLE]  https://example.org     │ No Security Headers
+[PROTECTED]   https://google.com     | XFO: SAMEORIGIN
+[VULNERABLE]  https://test.com        | No Headers Found
+[PROTECTED]   https://github.com      | CSP: frame-ancestors 'self'
+[VULNERABLE]  https://oldsite.net     | XFO: ALLOW-FROM
+[PROTECTED]   https://microsoft.com   | XFO: DENY
+[VULNERABLE]  https://example.org     | No Security Headers
 
 ┌──────────────────────────────────────────────────────────────┐
-│  📈 FINAL STATISTICS                                          │
+│  FINAL STATISTICS                                            │
 ├──────────────────────────────────────────────────────────────┤
-│  🟢 PROTECTED  :  3                                           │
-│  🔴 VULNERABLE :  3                                           │
-│  ⚪ ERRORS     :  0                                           │
-│  ⏱️ TIME       :  2.3 seconds                                 │
-│  🚀 SPEED      :  150 req/sec                                 │
+│  PROTECTED  :  3                                             │
+│  VULNERABLE :  3                                             │
+│  ERRORS     :  0                                             │
+│  TIME       :  2.3 seconds                                   │
 └──────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## 🛡️ **SECURITY HEADERS CHECKED**
+## SECURITY HEADERS CHECKED
 
-<p align="center">
-  <img src="https://img.shields.io/badge/X--Frame--Options-DENY-00FF00?style=for-the-badge&labelColor=black" alt="XFO">
-  <img src="https://img.shields.io/badge/X--Frame--Options-SAMEORIGIN-00FF00?style=for-the-badge&labelColor=black" alt="XFO2">
-  <img src="https://img.shields.io/badge/CSP-frame--ancestors-00FF00?style=for-the-badge&labelColor=black" alt="CSP">
-</p>
-
-| 🔒 HEADER | ✅ SECURE VALUES | ⚠️ VULNERABLE | 📝 STATUS |
-|-----------|------------------|---------------|-----------|
-| `X-Frame-Options` | `DENY`, `SAMEORIGIN` | Missing / `ALLOW-FROM` | 🛡️ Critical |
-| `CSP: frame-ancestors` | `'none'`, `'self'` | Missing / `*` | 🛡️ Critical |
-| `X-Frame-Options` + `CSP` | Both present | Only one present | 🟡 Medium |
+| Header | Secure Values | Vulnerable |
+|--------|--------------|------------|
+| X-Frame-Options | DENY, SAMEORIGIN | Missing / ALLOW-FROM |
+| CSP: frame-ancestors | 'none', 'self' | Missing / * |
+| X-Frame-Options + CSP | Both present | Only one present |
 
 ---
 
-## 📦 **TECH STACK**
+## TECHNOLOGY STACK
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
-  <img src="https://img.shields.io/badge/aiohttp-2C5BB4?style=for-the-badge&logo=python&logoColor=white" alt="aiohttp">
-  <img src="https://img.shields.io/badge/asyncio-0078D7?style=for-the-badge&logo=python&logoColor=white" alt="asyncio">
-  <img src="https://img.shields.io/badge/colorama-FF6C37?style=for-the-badge&logo=python&logoColor=white" alt="colorama">
-</p>
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=python,git,github,vscode&theme=dark" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/aiohttp-2C5BB4?style=flat-square&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/asyncio-0078D7?style=flat-square&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/colorama-FF6C37?style=flat-square&logo=python&logoColor=white" />
 </p>
 
 ---
 
-## 📊 **GITHUB STATS**
+## GITHUB STATISTICS
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=LindHunt&show_icons=true&theme=radical&count_private=true&hide_border=true&bg_color=000000&title_color=00FF00&icon_color=00FF00&text_color=FFFFFF" width="49%" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=LindHunt&theme=radical&hide_border=true&background=000000&stroke=00FF00&ring=00FF00&fire=FF0000&currStreakLabel=00FF00" width="49%" />
+  <img src="https://github-readme-stats.vercel.app/api?username=LindHunt&show_icons=true&theme=dark&count_private=true&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=58A6FF&text_color=C9D1D9" width="49%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=LindHunt&layout=compact&theme=dark&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9" width="49%" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=LindHunt&layout=pie&theme=radical&hide_border=true&bg_color=000000&title_color=00FF00&text_color=FFFFFF" width="40%" />
-  <img src="https://github-profile-trophy.vercel.app/?username=LindHunt&theme=radical&no-frame=true&row=2&column=4&margin-w=15&margin-h=15" width="55%" />
-</p>
-
----
-
-## 🎯 **PROJECT METRICS**
-
-<p align="center">
-  <img src="https://img.shields.io/github/stars/LindHunt/clickjackingscan?style=for-the-badge&logo=github&color=yellow" alt="Stars">
-  <img src="https://img.shields.io/github/forks/LindHunt/clickjackingscan?style=for-the-badge&logo=github&color=blue" alt="Forks">
-  <img src="https://img.shields.io/github/issues/LindHunt/clickjackingscan?style=for-the-badge&logo=github&color=red" alt="Issues">
-  <img src="https://img.shields.io/github/last-commit/LindHunt/clickjackingscan?style=for-the-badge&logo=github&color=green" alt="Last Commit">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=LindHunt&theme=dark&hide_border=true&background=0D1117&stroke=58A6FF&ring=58A6FF&fire=FF6B6B&currStreakLabel=58A6FF" width="49%" />
+  <img src="https://github-profile-trophy.vercel.app/?username=LindHunt&theme=onedark&no-frame=true&row=2&column=3&margin-w=15&margin-h=15" width="49%" />
 </p>
 
 ---
 
-## 🎨 **CONTRIBUTION GRAPH**
+## PROJECT METRICS
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=LindHunt&theme=react-dark&bg_color=000000&color=00FF00&line=00FF00&point=FFFFFF&area=true&hide_border=true" width="100%" />
+  <img src="https://img.shields.io/github/stars/LindHunt/clickjackingscan?style=flat-square&logo=github&color=yellow" />
+  <img src="https://img.shields.io/github/forks/LindHunt/clickjackingscan?style=flat-square&logo=github&color=blue" />
+  <img src="https://img.shields.io/github/issues/LindHunt/clickjackingscan?style=flat-square&logo=github&color=red" />
+  <img src="https://img.shields.io/github/last-commit/LindHunt/clickjackingscan?style=flat-square&logo=github&color=green" />
 </p>
 
 ---
 
-## ⚠️ **DISCLAIMER**
+## DISCLAIMER
 
 ```
-█████████████████████████████████████████████████████████████████
-█                                                               █
-█  ⚠️  THIS TOOL IS FOR EDUCATIONAL PURPOSES ONLY              █
-█  🔒 UNAUTHORIZED USE AGAINST SYSTEMS IS PROHIBITED           █
-█  ⚖️  USERS ARE RESPONSIBLE FOR THEIR ACTIONS                 █
-█  🛡️  ALWAYS GET PERMISSION BEFORE TESTING                    █
-█                                                               █
-█████████████████████████████████████████████████████████████████
+╔══════════════════════════════════════════════════════════════╗
+║  This tool is for educational purposes and                  ║
+║  authorized security testing only.                          ║
+║  Unauthorized use against systems without                   ║
+║  explicit permission is prohibited.                         ║
+║  Users assume all liability for their actions.              ║
+╚══════════════════════════════════════════════════════════════╝
 ```
 
 ---
 
-## 📜 **LICENSE**
+## LICENSE
 
 <p align="center">
-  <img src="https://img.shields.io/badge/LICENSE-MIT-00FF00?style=for-the-badge&logo=bookstack&logoColor=white&labelColor=black&border=1px solid white" alt="MIT" />
+  <img src="https://img.shields.io/badge/LICENSE-MIT-000000?style=flat-square&labelColor=2D2D2D" />
+  <img src="https://img.shields.io/badge/COPYRIGHT-2024_LindHunt-000000?style=flat-square&labelColor=2D2D2D" />
 </p>
 
 ---
 
-## 🎪 **FINAL SHOWCASE**
-
 <p align="center">
-  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer" width="100%" />
 </p>
 
 <p align="center">
-  <b>⚡ Star • 🍴 Fork • 🔧 Contribute</b>
+  <b>Star if useful • Made by LindHunt</b>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/MADE_WITH_❤️_BY-LINDHUNT-00FF00?style=for-the-badge&labelColor=black" alt="Made by LindHunt" />
-</p>
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" />
-</p>
-
-<p align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" width="80%" />
+  <img src="https://komarev.com/ghpvc/?username=LindHunt&style=flat-square&color=58A6FF" />
 </p>
