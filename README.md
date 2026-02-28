@@ -51,3 +51,19 @@ Errors: 0
 
 This tool is intended for educational purposes and authorized security testing only.
 Unauthorized use against systems without permission is strictly prohibited.
+
+
+
+
+# 👋 Hello, I'm LindHunt
+
+🛰 OSINT Analyst & Security Researcher  
+⚡ Building lightweight security utilities  
+
+---
+
+## 📊 GitHub Stats
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=LindHunt&show_icons=true&theme=tokyonight)
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=LindHunt&layout=compact&theme=tokyonight)
