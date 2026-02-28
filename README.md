@@ -128,21 +128,44 @@ python clickscan.py -list urls.txt -o results.txt --timeout 10 --threads 50
 
 ---
 
-## 📊 **GITHUB STATS**
+## 🔥 **ACHIEVEMENTS**
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=LindHunt&show_icons=true&theme=dark&count_private=true&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=58A6FF&text_color=C9D1D9" width="48%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=LindHunt&layout=compact&theme=dark&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9" width="48%" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=LindHunt&theme=dark&hide_border=true&background=0D1117&stroke=58A6FF&ring=58A6FF&fire=FF6B6B&currStreakLabel=58A6FF" width="48%" />
-  <img src="https://github-profile-trophy.vercel.app/?username=LindHunt&theme=onedark&no-frame=true&row=2&column=3&margin-w=15&margin-h=15" width="48%" />
+  <img src="https://github-profile-trophy.vercel.app/?username=LindHunt&theme=onedark&no-frame=true&row=2&column=4&margin-w=15&margin-h=15" width="80%" />
 </p>
 
 ---
 
-## 📈 **PROJECT METRICS**
+## 📈 **WAKATIME METRICS**
+
+<p align="center">
+  <img src="https://wakatime.com/badge/user/018d7c0e-8e2a-4b3f-9f1a-5d3c8b2f4e1a.svg?style=for-the-badge" />
+</p>
+
+---
+
+## 🔥 **CONTRIBUTION CALENDAR**
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=LindHunt&theme=github-dark&hide_border=true&area=true" width="95%" />
+</p>
+
+---
+
+## 🎯 **CURRENT FOCUS**
+
+```
+┌─────────────────────────────────────────────────────────┐
+│  🔴 Web Security Testing          ████████░░ 80%       │
+│  🟡 OSINT Development              ██████░░░░ 60%       │
+│  🟢 Tool Optimization              ███████░░░ 70%       │
+│  🔵 Documentation                  █████░░░░░ 50%       │
+└─────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 📊 **PROJECT METRICS**
 
 <p align="center">
   <img src="https://img.shields.io/github/stars/LindHunt/clickjackingscan?style=for-the-badge&logo=github&color=yellow" />
